@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/breedListFragment">
+
+    <fragment
+        android:id="@+id/breedListFragment"
+        android:name="com.jay.doggos.fragments.BreedListFragment"
+        android:label="fragment_breed_list"
+        tools:layout="@layout/fragment_breed_list" >
+        <action
+            android:id="@+id/action_breedListFragment_to_breedDetailsFragment"
+            app:destination="@id/breedDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breedDetailsFragment"
+        android:name="com.jay.doggos.fragments.BreedDetailsFragment"
+        android:label="fragment_breed_details"
+        tools:layout="@layout/fragment_breed_details" />
+</navigation>
