@@ -5,7 +5,7 @@
             android:id="@id/breedListFragment"
             android:title="Breeds" />
         <item
-            android:id="@id/breedDetailsFragment"
+            android:id="@id/randomBreedFragment"
              android:title="Random"/>
     </group>
 </menu>

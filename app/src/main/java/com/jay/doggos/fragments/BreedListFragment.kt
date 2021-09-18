@@ -5,13 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.jay.doggos.R
 import com.jay.doggos.databinding.FragmentBreedListBinding
+import com.jay.doggos.network.NetworkViewModel
 
 class BreedListFragment : Fragment() {
 
     private var _binding : FragmentBreedListBinding? = null
     private val binding get() = _binding!!
+
+    private val networkViewModel : NetworkViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +28,10 @@ class BreedListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            viewModel = networkViewModel
+            lifecycleOwner = this@BreedListFragment
+        }
     }
 
     override fun onDestroyView() {

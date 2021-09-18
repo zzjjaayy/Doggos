@@ -19,4 +19,13 @@
         android:name="com.jay.doggos.fragments.BreedDetailsFragment"
         android:label="fragment_breed_details"
         tools:layout="@layout/fragment_breed_details" />
+    <fragment
+        android:id="@+id/randomBreedFragment"
+        android:name="com.jay.doggos.fragments.RandomBreedFragment"
+        android:label="fragment_random_breed"
+        tools:layout="@layout/fragment_random_breed" >
+        <action
+            android:id="@+id/action_randomBreedFragment_to_breedDetailsFragment"
+            app:destination="@id/breedDetailsFragment" />
+    </fragment>
 </navigation>
