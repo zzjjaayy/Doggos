@@ -3,9 +3,9 @@
     <group>
         <item
             android:id="@id/breedListFragment"
-            android:title="Breeds" />
+            android:title="@string/all_breeds" />
         <item
             android:id="@id/randomBreedFragment"
-             android:title="Random"/>
+             android:title="@string/random_breeds"/>
     </group>
 </menu>

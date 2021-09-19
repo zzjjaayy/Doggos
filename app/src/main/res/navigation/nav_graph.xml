@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/breedListFragment"
-        android:name="com.jay.doggos.fragments.BreedListFragment"
-        android:label="fragment_breed_list"
+        android:name="com.jay.doggos.fragments.breedList.BreedListFragment"
+        android:label="@string/all_breeds"
         tools:layout="@layout/fragment_breed_list" >
         <action
             android:id="@+id/action_breedListFragment_to_breedDetailsFragment"
@@ -16,16 +16,16 @@
     </fragment>
     <fragment
         android:id="@+id/breedDetailsFragment"
-        android:name="com.jay.doggos.fragments.BreedDetailsFragment"
-        android:label="fragment_breed_details"
-        tools:layout="@layout/fragment_breed_details" />
+        android:name="com.jay.doggos.fragments.breedDetails.BreedDetailsFragment"
+        android:label="@string/breed_details"
+        tools:layout="@layout/fragment_breed_details" >
+        <argument
+            android:name="breedName"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/randomBreedFragment"
-        android:name="com.jay.doggos.fragments.RandomBreedFragment"
-        android:label="fragment_random_breed"
-        tools:layout="@layout/fragment_random_breed" >
-        <action
-            android:id="@+id/action_randomBreedFragment_to_breedDetailsFragment"
-            app:destination="@id/breedDetailsFragment" />
-    </fragment>
+        android:name="com.jay.doggos.fragments.randomBreed.RandomBreedFragment"
+        android:label="@string/random_breeds"
+        tools:layout="@layout/fragment_random_breed" />
 </navigation>
