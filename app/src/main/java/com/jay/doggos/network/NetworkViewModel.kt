@@ -69,7 +69,7 @@ class NetworkViewModel : ViewModel() {
                 }
                 if(listOfImages.size < 10) {
                     _currentBreed.value = listOfImages.shuffled().toList()
-                } else _currentBreed.value = listOfImages.shuffled().subList(0, 9).toList()
+                } else _currentBreed.value = listOfImages.shuffled().subList(0, 10).toList()
 
                 Log.d(BreedListFragment.LOG_TAG, "Current breed -> ${currentBreed.value.toString()}")
                 _status.value = StatusEnum.DONE
