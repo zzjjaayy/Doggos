@@ -5,4 +5,5 @@
     <string name="all_breeds">All Breeds</string>
     <string name="random_breeds">Random Breeds</string>
     <string name="breed_details">Pics of {breedName}</string>
+    <string name="error_text">Something went wrong!</string>
 </resources>
